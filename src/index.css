@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply md:rounded-sm rounded-md md:px-3 md:py-1 p-3 cursor-pointer capitalize w-full;
+  }
+
+  .tip-btn {
+    @apply text-white bg-green-700 hover:bg-cyan-200 hover:text-primary-600 font-bold md:text-base text-2xl;
+  }
+
+  .input-value {
+    @apply bg-primary-100 rounded-sm text-right w-full text-primary-600 font-bold md:px-2 md:py-1 p-3 cursor-pointer focus:outline-primary-500 md:text-base text-2xl;
+  }
+
+  .label {
+    @apply md:text-xs text-base font-bold;
+  }
+
+  .input-icon {
+    @apply bg-no-repeat bg-left bg-origin-content;
+  }
+
+  .result-label {
+    @apply md:text-xs text-base text-primary-100;
+  }
+
+  .result-container {
+    @apply flex justify-between items-center;
+  }
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}

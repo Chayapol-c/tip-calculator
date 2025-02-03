@@ -47,7 +47,7 @@ const App = () => {
       <h1 className="uppercase text-primary-600 font-bold md:text-base text-2xl md:mt-32 md:mb-20 mt-10 mb-8">
         s p l i <br /> t t e r
       </h1>
-      <div className="relative flex md:flex-row flex-col gap-x-6  bg-white md:rounded-xl rounded-t-3xl p-6 justify-between md:w-[40rem] md:h-[20rem] w-full md:flex-none flex-1">
+      <main className="relative flex md:flex-row flex-col gap-x-6  bg-white md:rounded-xl rounded-t-3xl p-6 justify-between md:w-[40rem] md:h-[20rem] w-full md:flex-none flex-1">
         <div className="flex flex-1 flex-col justify-between p-3 md:m-0 mb-5">
           <BillForm bill={bill} setBill={setBill} />
           <SelectTip selectTip={selectTip} setSelectTip={setSelectTip} />
@@ -58,7 +58,7 @@ const App = () => {
           totalAmount={getTotalAmount()}
           onReset={onReset}
         />
-      </div>
+      </main>
     </div>
   )
 }

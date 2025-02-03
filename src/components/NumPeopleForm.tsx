@@ -27,6 +27,7 @@ const NumPeopleForm = ({ numPeople, setNumPeople }: NumPeopleFormProps) => {
         </div>
       </div>
       <input
+        aria-label="numberOfPeople"
         type="text"
         className={`input-value input-icon bg-[url(/src/images/icon-person.svg)] ${warning}`}
         onChange={(e) => handlePeople(e)}

@@ -22,6 +22,7 @@ const BillForm = ({ bill, setBill }: BillFormProps) => {
     <div>
       <p className="label text-primary-400 mb-2">Bill</p>
       <input
+        aria-label="bill"
         type="text"
         className={`input-value input-icon bg-[url(/src/images/icon-dollar.svg)]`}
         onChange={(e) => handleBill(e)}
